@@ -1,0 +1,1 @@
+g++ string_manipulation/string_manipulation.cpp file_management/file_management.cpp cli/cli.cpp unit_testing/unit_testing.cpp main.cpp -o bin

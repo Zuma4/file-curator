@@ -1,0 +1,17 @@
+#pragma once
+void unitmine_setup();
+bool unit_matching();
+bool unit_getFiles();
+bool unit_handleCopies();
+bool unit_getFilesFromTxt();
+bool unit_saveDirectories();
+bool unit_copyFilesFromDirectory();
+bool unit_deleteFile();
+bool unit_moveFilesIntodDirectory();
+bool unit_organizeOnExtensions();
+bool unit_organizeOnGroups();
+bool unit_deleteEmpties();
+bool unit_loadOptions();
+bool unit_saveCookies(); 
+bool unit_loadCookies(); 
+bool unit_loadOrganizeOptions();
