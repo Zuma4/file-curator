@@ -32,6 +32,4 @@ int main() {
     return 0;
 }
 
-// TODO: test the interface
-// TODO: upload the project on github
 // TODO: make functions throw proper error objects
