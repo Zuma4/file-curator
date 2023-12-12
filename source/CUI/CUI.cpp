@@ -38,7 +38,7 @@ bool optional() {
 }
 
 
-void start_option_1()
+void loadSavedFiles()
 {
     fs::path filepath = inputTxtFileDirectory();
     vector<fs::path> imported_files = getFilesFromTxt(filepath);
@@ -124,7 +124,7 @@ void printCollectedFiles(const vector<fs::path>& collected_files)
     }
 }
 
-void start_option_2()
+void exploreDirectory()
 {
     while(true)
     {
@@ -188,7 +188,7 @@ organizeOptions inputOrganizeOptions()
     return organzie_groups;
 }
 
-void start_option_3(Cookies& cookies)
+void organizeDirectory(Cookies& cookies)
 {
     cout << "\nWarning: this option may delete (empty) directories\n";
 
@@ -390,7 +390,7 @@ Options getOptionsFromUser()
 fs::path inputTxtFileDirectory()
 {
     clearCin();
-    cout << "\nenter .txt file path, the txt file most be a valid output of file-collector: \n";
+    cout << "\nenter .txt file path, the txt file most be a valid output of the program: \n";
 
     while (true)
     {
