@@ -1,4 +1,4 @@
-#include "cmd.h"
+#include "CUI.h"
 #include "../file_management/file_management.h"
 #include "../string_manipulation/string_manipulation.h"
 #include <iostream>
