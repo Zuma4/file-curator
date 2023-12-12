@@ -6,11 +6,11 @@
 void clearCin();
 bool optional();
 std::filesystem::path inputPathDirectory();
-void start_option_1();
+void exploreDirectory();
 void printCollectedFiles(const std::vector<std::filesystem::path>& collected_files);
-void start_option_2();
+void organizeDirectory(Cookies& cookies);
 organizeOptions inputOrganizeOptions();
-void start_option_3(Cookies& cookies);
+void loadSavedFiles();
 void inputSaveInfo(const std::vector<std::filesystem::path>& files);
 Options getOptionsFromUser();
 std::filesystem::path inputTxtFileDirectory();
