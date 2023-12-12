@@ -218,7 +218,7 @@ void start_option_3(Cookies& cookies)
             {
                 ifstream input{cookies.lastSavedOrganizeOptionsPath.string()};
                 string content;
-                getline(input, content, '\n');
+                getline(input, content, '\0');
                 input.close();
                 organize_groups = loadOrganizeOptions(content);
             }
