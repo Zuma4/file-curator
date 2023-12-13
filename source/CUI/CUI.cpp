@@ -65,9 +65,9 @@ void loadSavedFiles()
             
             if (copy)
             {
-                copyFilesIntoDirectory(path_directory, imported_files);
+                int copied = copyFilesIntoDirectory(path_directory, imported_files);
+                cout << copied << " files copied!\n";
             }
-            cout << imported_files.size() << " files copied!\n";
         }
 
         else if (load_option == 2)
