@@ -1,5 +1,0 @@
-D:\Work Related\C++\file collector\source/main.cpp | main | 0KB
-D:\Work Related\C++\file collector\source/cli\cli.cpp | cli | 12KB
-D:\Work Related\C++\file collector\source/file_management\file_management.cpp | file_management | 14KB
-D:\Work Related\C++\file collector\source/string_manipulation\string_manipulation.cpp | string_manipulation | 2KB
-D:\Work Related\C++\file collector\source/unit_testing\unit_testing.cpp | unit_testing | 12KB
