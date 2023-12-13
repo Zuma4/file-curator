@@ -244,11 +244,12 @@ std::vector<fs::path> filter(const std::vector<fs::path>& imported_files, const 
 int moveFilesIntoDirectory(const fs::path& path_directory, const std::vector<fs::path>& files)
 {
     if (!fs::exists(path_directory))
-        return 0; 
+        throw "invalid path directory";
 
     int moved = 0;
     for (const auto& file: files){
-        moved += moveFileIntoDirectory(path_directory, file);
+        if(moveFileIntoDirectory(path_directory, file))
+            ++moved;
     }
     return moved;
 }
@@ -316,11 +317,16 @@ std::vector<fs::path> getFilesFromTxt(const fs::path& txt_file_dir)
     return res;
 }
 
-void copyFilesIntoDirectory(const fs::path& directory, const std::vector<fs::path>& collectedFiles) {
-    createIfNotExist(directory);
+int copyFilesIntoDirectory(const fs::path& directory, const std::vector<fs::path>& collectedFiles) {
+    if (!fs::exists(directory))
+        throw "invalid directory path";
+    int copied = 0;
     for (const auto& file : collectedFiles) {
-        copyFileIntoDirectory(directory, file);
+        if(copyFileIntoDirectory(directory, file))
+            ++copied;
     }
+
+    return copied;
 }
 
 bool copyFileIntoDirectory(const fs::path& directory, const fs::path& file)
