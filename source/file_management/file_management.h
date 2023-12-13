@@ -12,7 +12,7 @@ bool matching(const std::filesystem::path& file, const Options& options);
 void getFiles(const std::filesystem::path& directory, std::vector<std::filesystem::path>& files, const Options& options = {});
 int saveDirectories(const std::vector<std::filesystem::path>& files, const std::filesystem::path& directory = "savings/collected/", const std::string& name = "collected");
 std::vector<std::filesystem::path> getFilesFromTxt(const std::filesystem::path& txt_file_dir);
-void copyFilesIntoDirectory(const std::filesystem::path& directory, const std::vector<std::filesystem::path>& collectedFiles);
+int copyFilesIntoDirectory(const std::filesystem::path& directory, const std::vector<std::filesystem::path>& collectedFiles);
 void getFilesMulti(const std::vector<std::filesystem::path>& fileDirectories, std::vector<std::filesystem::path>& out_collectedFiles, const Options& options);
 int removeFile(const std::filesystem::path& file);
 std::vector<std::filesystem::path> filter(const std::vector<std::filesystem::path>& imported_files, const Options& options);
