@@ -52,7 +52,7 @@ void loadSavedFiles()
     cout << '\n' << imported_files.size() << " files loaded\n"; 
     while (true)
     {
-        vector<string> load_options = {"copy all files", "delete all files", "move all files", "filter", "back"};
+        vector<string> load_options = {"copy all files", "filter", "delete all files", "move all files", "back"};
         int load_option = choose(load_options);
 
         if (load_option == 1)
